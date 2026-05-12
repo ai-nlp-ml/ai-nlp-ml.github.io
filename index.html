@@ -170,18 +170,151 @@
 <!-- Right: Images -->
 <div class="col-lg-4">
   <div class="row g-3">
+
+    <!-- NEWS CARD -->
     <div class="col-12">
-      <div class="card shadow-sm">
-       <a href="https://www.iitp.ac.in/~sevak/" target="blank"> <img src="assets/img/sevak.jpg" alt="Lab Image 1" class="img-fluid rounded uniform-img" style="height: 300px;"></a>
+      <div class="card shadow-sm news-highlight-card">
+
+        <div class="news-content">
+          <h5>
+            IIT-P’s AI Initiative Set to Break India’s Digital Language Barrier
+          </h5>
+
+          <p>
+            COIL-D under BHASHINI is driving multilingual AI innovation 
+            across India’s diverse linguistic landscape.
+          </p>
+
+          <a href="https://timesofindia.indiatimes.com/city/patna/iit-ps-ai-initiative-set-to-break-indias-digital-language-barrier/amp_articleshow/131021449.cms"
+             target="_blank"
+             class="read-news-btn">
+             Read Full News →
+          </a>
+        </div>
+
       </div>
     </div>
+
+    <!-- SEVAK -->
     <div class="col-12">
       <div class="card shadow-sm">
-        <a href="https://economictimes.indiatimes.com/industry/services/retail/flipkart-signs-pact-with-iit-patna-for-joint-research-in-artificial-intelligence-machine-learning/articleshow/77615676.cms?from=mdr" target="blank"><img src="assets/img/media.jpg" alt="Lab Image 2" class="img-fluid rounded uniform-img"></a>
+        <a href="https://www.iitp.ac.in/~sevak/" target="_blank">
+          <img src="assets/img/sevak.jpg"
+               alt="Lab Image 1"
+               class="img-fluid rounded uniform-img"
+               style=" height: 120px;width: 100%; object-fit: contain;  ">
+        </a>
       </div>
     </div>
+
+
+    <!-- MEDIA -->
+    <div class="col-12">
+      <div class="card shadow-sm">
+        <a href="https://economictimes.indiatimes.com/industry/services/retail/flipkart-signs-pact-with-iit-patna-for-joint-research-in-artificial-intelligence-machine-learning/articleshow/77615676.cms?from=mdr"
+           target="_blank">
+
+          <img src="assets/img/media.jpg"
+               alt="Lab Image 2"
+               class="img-fluid rounded uniform-img">
+
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>
+
+
+
+<!-- ================= CSS ================= -->
+
+<style>
+
+.news-highlight-card{
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.98);
+    transition: 0.3s ease;
+    animation: pulseGlow 2.5s infinite;
+}
+
+.news-highlight-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.18);
+}
+
+.news-content{
+    /*padding: 18px;*/
+    font-family: var(--default-font);
+}
+
+.news-content h5{
+    font-size: 15px;
+    line-height: 1.4;
+    /*margin-bottom: 12px;*/
+    color: #222;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+
+.news-content p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.read-news-btn{
+    display: inline-block;
+    background: #ff2b5b;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.read-news-btn:hover{
+    background: #e3204d;
+    color: white;
+}
+
+@keyframes pulseGlow{
+    0%{
+        box-shadow: 0 0 0 rgba(255,43,91,0.15);
+    }
+    50%{
+        box-shadow: 0 0 25px rgba(255,43,91,0.25);
+    }
+    100%{
+        box-shadow: 0 0 0 rgba(255,43,91,0.15);
+    }
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .news-content h5{
+        font-size: 17px;
+    }
+
+    .news-content p{
+        font-size: 13px;
+    }
+
+    .read-news-btn{
+        font-size: 12px;
+        padding: 9px 16px;
+    }
+}
+
+</style>
 
 
     </div>
