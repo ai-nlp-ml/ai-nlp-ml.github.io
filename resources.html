@@ -121,6 +121,8 @@
       gap: 25px;
     }
 
+
+
     .card {
       background: #ffffff;
       border: 1px solid #ddd;
@@ -128,6 +130,7 @@
       padding: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
       transition: transform 0.2s ease;
+      scroll-margin-top: 120px;
     }
 
     .card:hover {
@@ -196,7 +199,10 @@
     
 
     <div class="grid">
-     
+
+
+
+ <!-- ----Author: Priyanshu Priya-----    -->
 
       <!-- CARD -->
 
@@ -241,7 +247,7 @@
 </div>
 
       <!-- CARD -->
-<div class="card">
+<div id="XeroPol" div class="card">
   <div class="card-header" onclick="toggleCard(this)">
     XeroPol: Emotion-Aware Contrastive Learning for Zero-Shot Cross-Lingual Politeness Identification in Dialogues
   </div>
@@ -279,7 +285,7 @@
 
 
       <!-- CARD -->
-<div class="card">
+<div id="MixingItUp" div class="card">
   <div class="card-header" onclick="toggleCard(this)">
     Mixing it up: Inducing Empathy and Politeness Using Multiple Behaviour-aware Generators for Conversational Systems
   </div>
@@ -317,7 +323,7 @@
 </div>
 
 <!-- CARD -->
-<div class="card">
+<!-- <div class="card">
   <div class="card-header" onclick="toggleCard(this)">
     EMPOWER-KARE: Deep Prompt Learning for Knowledge-aware Response Generation in Clinical Counseling and Legal Support Conversations
   </div>
@@ -351,10 +357,10 @@
 </pre>
 
   </div>
-</div>
+</div> -->
 
       <!-- CARD -->
-<div class="card">
+<!-- <div class="card">
   <div class="card-header" onclick="toggleCard(this)">
     On the Way to Gentle AI Counselor: Politeness Cause Elicitation and Intensity Tagging in Code-mixed Hinglish Conversations for Social Good
   </div>
@@ -391,10 +397,10 @@
 
   </div>
 </div>
-
+ -->
 
       <!-- CARD -->
-<div class="card">
+<div id="MENDER" div class="card">
   <div class="card-header" onclick="toggleCard(this)">
     MENDER: Multi-hop Commonsense and Domain-specific CoT Reasoning for Knowledge-grounded Empathetic Counseling of Crime Victims
   </div>
@@ -438,7 +444,7 @@
 </div>
 
       <!-- CARD -->
-<div class="card">
+<!-- <div class="card">
   <div class="card-header" onclick="toggleCard(this)">
     Facilitating Early Maladaptive Schema–Guided Polite and Empathetic Psychotherapeutic Support: An LLM-Driven MoE-RL-Based Dialogue System
   </div>
@@ -476,10 +482,10 @@
     </pre>
 
   </div>
-</div>
+</div> -->
 
       <!-- CARD -->
-<div class="card">
+<!-- <div id="WAA" div class="card">
   <div class="card-header" onclick="toggleCard(this)">
     We Argue to Agree: Towards Personality-Driven Argumentation-Based Negotiation Dialogue Systems for Tourism
   </div>
@@ -517,10 +523,11 @@
     </pre>
 
   </div>
-</div>
+</div> -->
 
-      <!-- CARD -->
-<div class="card">
+<!-- CARD -->
+<div id="IMKDG" class="card">
+
   <div class="card-header" onclick="toggleCard(this)">
     Faithful Medical Dialogue Generation Using Homo-Heterogeneous Exemplar-based In-Context Knowledge Grounding
   </div>
@@ -528,8 +535,8 @@
   <div class="card-body">
 
     <div class="links">
-    <a href="http://www.lrec-conf.org/proceedings/lrec2026/pdf/2026.lrec2026-1.4.pdf" target="_blank">Paper</a>   
-    <a href="https://github.com/priyanshu-profile/LREC26_IMKDG" target="_blank">Github</a>
+      <a href="http://www.lrec-conf.org/proceedings/lrec2026/pdf/2026.lrec2026-1.4.pdf" target="_blank">Paper</a>
+      <a href="https://github.com/priyanshu-profile/LREC26_IMKDG" target="_blank">Github</a>
     </div>
 
     <p><strong>By downloading you agree to use the resources for research purpose only and cite the below paper.</strong></p>
@@ -541,24 +548,40 @@
     </p>
 
     <a>BibTeX</a>
-    <pre>
+
+<pre>
 @inproceedings{priya-etal-2026-faithful,
-  title     = {Faithful Medical Dialogue Generation Using Homo-Heterogeneous Exemplar-based In-Context Knowledge Grounding},
-  author    = {Priya, Priyanshu and Goyal, Hardik and Ekbal, Asif},
-  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
-  month     = {May},
-  year      = {2026},
-  pages     = {50--63},
-  address   = {Palma, Mallorca, Spain},
-  publisher = {European Language Resources Association (ELRA)},
-  editor    = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
-  doi       = {10.63317/43dzmqsdheef},
-  abstract  = {The growing reliance on tele-healthcare has heightened the demand for accessible and professional health support. Artificial Intelligence (AI)-assisted medical dialogue systems have emerged as key solutions, with Large Language Models (LLMs) advancing the generation tasks. However, their susceptibility to hallucination leads to inaccurate and unreliable information, posing major challenges. To address this, we propose a novel approach to mitigate hallucinations in LLMs by integrating external knowledge and in-context learning mechanisms for faithful medical dialogue generation (MDG). In particular, we devise an In-context Medical Knowledge-grounded Dialogue Generator (IMKDG), a novel plug-and-play retrieval-based framework that leverages external medical knowledge, in-context learning (ICL), and retrieval methods to enable LLMs to generate faithful responses, thereby enhancing their performance on the MDG task. We utilize large-scale medical knowledge based on the Unified Medical Language System (UMLS) to retrieve knowledge pertinent to the dialogue context. Further, to enhance the LLMs' ICL capability for the MDG task, we propose the Homo-Heterogeneous Exemplar Selection (H2ES) method, a novel in-context exemplar retrieval method based on both dialogue context and medical knowledge. Automatic and human evaluations on the MedDialog-EN and CDialog datasets across various LLMs demonstrate the efficacy of the proposed framework in mitigating hallucinations.}
+  title={Faithful Medical Dialogue Generation Using Homo-Heterogeneous Exemplar-based In-Context Knowledge Grounding},
+  author={Priya, Priyanshu and Goyal, Hardik and Ekbal, Asif},
+  booktitle={Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+  month={May},
+  year={2026},
+  pages={50--63},
+  address={Palma, Mallorca, Spain},
+  publisher={European Language Resources Association (ELRA)},
+  editor={Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+  doi={10.63317/43dzmqsdheef},
+  abstract={The growing reliance on tele-healthcare has heightened the demand for accessible and professional health support. Artificial Intelligence (AI)-assisted medical dialogue systems have emerged as key solutions, with Large Language Models (LLMs) advancing the generation tasks. However, their susceptibility to hallucination leads to inaccurate and unreliable information, posing major challenges. To address this, we propose a novel approach to mitigate hallucinations in LLMs by integrating external knowledge and in-context learning mechanisms for faithful medical dialogue generation (MDG). In particular, we devise an In-context Medical Knowledge-grounded Dialogue Generator (IMKDG), a novel plug-and-play retrieval-based framework that leverages external medical knowledge, in-context learning (ICL), and retrieval methods to enable LLMs to generate faithful responses, thereby enhancing their performance on the MDG task. We utilize large-scale medical knowledge based on the Unified Medical Language System (UMLS) to retrieve knowledge pertinent to the dialogue context. Further, to enhance the LLMs’ ICL capability for the MDG task, we propose the Homo-Heterogeneous Exemplar Selection (H2ES) method, a novel in-context exemplar retrieval method based on both dialogue context and medical knowledge. Automatic and human evaluations on the MedDialog-EN and CDialog datasets across various LLMs demonstrate the efficacy of the proposed framework in mitigating hallucinations.}
 }
-    </pre>
+</pre>
 
   </div>
+
 </div>
+<!-- --------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <!-- CARD -->
 <div class="card">
